@@ -1,0 +1,186 @@
+Script started on 2020-06-26 22:25:01-04:00 [TERM="xterm" TTY="/dev/pty0" COLUMNS="80" LINES="24"]
+]0;/cygdrive/c/Users/abhip/eclipse-CST-Abhi-workspace/Assignment/Debug
+[32mabhip@DESKTOP-BVBHF8V [33m/cygdrive/c/Users/abhip/eclipse-CST-Abhi-workspace/Assignment/Debug[0m
+$ ls -la
+total 258
+drwx------+ 1 abhip abhip      0 Jun 26 22:25 .
+drwx------+ 1 abhip abhip      0 Jun 26 16:51 ..
+-rwxr-xr-x+ 1 abhip abhip 245473 Jun 26 22:22 Assignment.exe
+-rwx------+ 1 abhip abhip   1074 Jun 26 22:21 makefile
+-rwx------+ 1 abhip abhip    239 Jun 26 22:07 objects.mk
+-rwx------+ 1 abhip abhip    420 Jun 26 22:21 sources.mk
+drwx------+ 1 abhip abhip      0 Jun 26 22:21 src
+-rw-r--r--+ 1 abhip abhip      0 Jun 26 22:25 typescript
+]0;/cygdrive/c/Users/abhip/eclipse-CST-Abhi-workspace/Assignment/Debug
+[32mabhip@DESKTOP-BVBHF8V [33m/cygdrive/c/Users/abhip/eclipse-CST-Abhi-workspace/Assignment/Debug[0m
+$ make
+make: 'src/helper/helper.o' is up to date.
+]0;/cygdrive/c/Users/abhip/eclipse-CST-Abhi-workspace/Assignment/Debug
+[32mabhip@DESKTOP-BVBHF8V [33m/cygdrive/c/Users/abhip/eclipse-CST-Abhi-workspace/Assignment/Debug[0m
+$ ./Assignment.exe
+Welcome to the Student Registration System (SRC)
+
+How many student would to like to registered:3
+please enter student ID for student 1:12345
+please enter student ID for student 2:34567
+please enter student ID for student 3:56789
+[12345, 34567, 56789]
+How many courses are you offering :2
+please enter courses code for course 1:CST8234
+please enter courses code for course 2:CST8288
+[CST8234, CST8288]
+Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 2
+
+Please enter student ID: 12345
+Please enter course code:CST8234
+[ [ 0, -1 ], [ -1, -1 ], [ -1, -1 ] ]
+Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 1
+
+Please enter student ID: 12345
+Please enter course code:CST8288
+[ [ 0, 1 ], [ -1, -1 ], [ -1, -1 ] ]
+Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 34567
+Try again....Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 1
+
+Please enter student ID: 34567
+Please enter course code:CST8234
+[ [ 0, 1 ], [ 1, -1 ], [ -1, -1 ] ]
+Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 1
+
+Please enter student ID: 34567
+Please enter course code:CST8288
+[ [ 0, 1 ], [ 1, 1 ], [ -1, -1 ] ]
+Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 1
+
+Please enter student ID: 56789
+Please enter course code:CST8234
+[ [ 0, 1 ], [ 1, 1 ], [ 1, -1 ] ]
+Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 2
+
+Please enter student ID: 56789
+Please enter course code:CST8288
+[ [ 0, 1 ], [ 1, 1 ], [ 1, 0 ] ]
+Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 3
+[ [ 0, 1 ], [ 1, 1 ], [ 1, 0 ] ]
+Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 1
+
+Please enter student ID: 11223
+Error: Student ID 11223 not found. Try again
+Please enter student ID: 12345
+Please enter course code:CST   cst8234
+Error: course code cst8234 not found. Try again
+Please enter course code:cst8244
+Error: course code cst8244 not found. Try again
+Please enter course code:CST8244
+Error: course code CST8244 not found. Try again
+Please enter course code:CST8234
+[ [ 1, 1 ], [ 1, 1 ], [ 1, 0 ] ]
+Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 2
+
+Please enter student ID: 34566
+Error: course code 34566 not found. Try again
+
+Please enter student ID: 34567
+Please enter course code:cst8288
+Error: course code cst8288 not found.Try again
+Please enter course code:CST8244
+Error: course code CST8244 not found.Try again
+Please enter course code:CST8244
+Error: course code CST8244 not found. Try again
+Please enter course code:CST8288
+[ [ 1, 1 ], [ 1, 0 ], [ 1, 0 ] ]
+Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 3
+[ [ 1, 1 ], [ 1, 0 ], [ 1, 0 ] ]
+Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 5
+Try again....Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 0
+Try again....Please choose one of the following ctions: 
+
+1- Register a student in acourse
+2- Drop a student's course
+3- Print registration table
+4- Quit
+Please enter action number: 4
+Exit....  ]0;/cygdrive/c/Users/abhip/eclipse-CST-Abhi-workspace/Assignment/Debug
+[32mabhip@DESKTOP-BVBHF8V [33m/cygdrive/c/Users/abhip/eclipse-CST-Abhi-workspace/Assignment/Debug[0m
+$ EXI[K[K[Kexit
+exit
+
+Script done on 2020-06-26 22:31:36-04:00 [COMMAND_EXIT_CODE="0"]

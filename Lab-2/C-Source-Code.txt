@@ -1,0 +1,58 @@
+/**
+* File: phone_number_formatter.c
+* Author:  Abhi Patel (pate0789)
+* Status:
+* Compiles without warning(s): << True  >>
+* Requirement #1 - exit on input of 0: << complete  >>
+* Requirement #2 - not a 7-digit number: << complete  >>
+* Requirement #3 - invalid phone number: << complete  >>
+* Requirement #4 - formatted phone number: << complete  >>
+* Requirement #5 - loops until input of 0: << complete  >>
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/**************************************************************************
+ * Main
+ **************************************************************************/
+int main(void) {
+
+	//TODO: https://wiki.eclipse.org/CDT/User?FAQ#Eclipse_console_does_not_show_output_on_windows
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+
+	int first,last,pho,checking;
+
+
+	do {
+		printf("\nPlease enter a phone number: ");
+		scanf( "%d", &pho);
+	checking = pho/1000000;
+		 if ( 0 == pho ) {
+					printf("Quit signal recieved\n");
+					printf("Program ended with exit code: %d", pho);
+					return EXIT_SUCCESS;
+					 }
+		 else if (checking == 1) {
+			 printf("Invalid phone number");
+		 }
+
+		 else {
+				if( pho > 1999999  && pho < 10000000)
+				{
+				first = pho/10000;
+				last = pho%10000;
+				printf("The formatted phone number: %d-%d",first,last);
+				}
+				else
+				{
+				printf("The number entered is not 7-digits long");
+				}
+
+		    	}
+		}while(pho !=0);
+		printf("Quit signal recieved\n");
+			printf("Program ended with exit code: %d", pho);
+			return EXIT_SUCCESS;
+}
